@@ -1,0 +1,11 @@
+environment: test
+
+environments:
+  test:
+    envName: test
+    baseUri: https://thetestingworldapi.com/
+    logRequestsDetails: false
+    logResponsesDetails: false
+    endpoints:
+      studentDetails: api/studentsDetails
+      specificStudentDetails: api/studentsDetails/{id}
