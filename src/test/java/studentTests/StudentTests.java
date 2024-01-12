@@ -29,7 +29,6 @@ public class StudentTests extends TestBase {
 
         //delete
         validate_response_code(send_DELETE_student(studentId), 200);
-        response = send_GET_student(studentId);
-        validate_GET_student_response(response, null);
+        validate_GET_student_response(send_GET_student(studentId), null);
     }
 }
