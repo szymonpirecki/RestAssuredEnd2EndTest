@@ -1,4 +1,15 @@
 package models;
 
-public record Student(String first_name, String middle_name, String last_name, String date_of_birth) {
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@Builder
+public class Student {
+    private String first_name;
+    private String middle_name;
+    private String last_name;
+    private String date_of_birth;
 }
